@@ -53,6 +53,7 @@ export default function RolesPage() {
             alt="Akua Feyie Leadership"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-top"
             style={{ objectPosition: 'top center' }}
             sizes="100vw"
@@ -146,6 +147,7 @@ export default function RolesPage() {
                   src={src}
                   alt="Akua Feyie"
                   fill
+                  loading="lazy"
                   className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 33vw, 25vw"
                 />

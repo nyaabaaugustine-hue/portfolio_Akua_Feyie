@@ -22,6 +22,7 @@ export default function AboutPage() {
             alt="Christiana Akua Feyie"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-top"
             style={{ objectPosition: 'top center' }}
             sizes="100vw"

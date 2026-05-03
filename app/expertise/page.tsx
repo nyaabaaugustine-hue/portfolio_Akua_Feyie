@@ -27,6 +27,7 @@ export default function ExpertisePage() {
             alt="Akua Feyie Expertise"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-top"
             style={{ objectPosition: 'top center' }}
             sizes="100vw"
@@ -91,6 +92,7 @@ export default function ExpertisePage() {
                   src={IMAGES.portrait2}
                   alt="Akua Feyie"
                   fill
+                  loading="lazy"
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 45vw"
                 />

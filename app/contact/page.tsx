@@ -38,6 +38,7 @@ export default function ContactPage() {
             alt="Contact Akua Feyie"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-top"
             style={{ objectPosition: 'top center' }}
             sizes="100vw"
@@ -114,6 +115,7 @@ export default function ContactPage() {
                   src={IMAGES.portrait2}
                   alt="Christiana Akua Feyie"
                   fill
+                  loading="lazy"
                   className="object-cover object-top"
                   sizes="(max-width: 1024px) 80vw, 30vw"
                 />

@@ -11,10 +11,11 @@ export default function RealEstatePage() {
       <section className="relative min-h-[60vh] flex items-end pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://res.cloudinary.com/dwsl2ktt2/image/upload/f_auto,q_auto,w_1600,c_limit/v1777196963/1_j6fe4u.jpg"
+            src={IMAGES.phoenixHero}
             alt="The Phoenix Enclave"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-top"
             style={{ objectPosition: 'top center' }}
             sizes="100vw"

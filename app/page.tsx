@@ -43,6 +43,7 @@ export default function Home() {
             alt="Christiana Akua Feyie"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-top"
             style={{ objectPosition: 'top center' }}
             sizes="100vw"
