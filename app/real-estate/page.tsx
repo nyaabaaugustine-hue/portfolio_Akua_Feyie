@@ -11,7 +11,7 @@ export default function RealEstatePage() {
       <section className="relative min-h-[60vh] flex items-end pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://res.cloudinary.com/dwsl2ktt2/image/upload/v1777196963/1_j6fe4u.jpg"
+            src="https://res.cloudinary.com/dwsl2ktt2/image/upload/f_auto,q_auto,w_1600,c_limit/v1777196963/1_j6fe4u.jpg"
             alt="The Phoenix Enclave"
             fill
             priority
@@ -54,6 +54,7 @@ export default function RealEstatePage() {
                   src={IMAGES.photo5}
                   alt="The Phoenix Enclave"
                   fill
+                  loading="lazy"
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -111,6 +112,7 @@ export default function RealEstatePage() {
             alt="Christie's Homestay"
             fill
             className="object-cover opacity-30"
+            loading="lazy"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-dark/70" />
@@ -149,6 +151,7 @@ export default function RealEstatePage() {
                 src={IMAGES.portrait2}
                 alt="Christie's Homestay"
                 fill
+                loading="lazy"
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

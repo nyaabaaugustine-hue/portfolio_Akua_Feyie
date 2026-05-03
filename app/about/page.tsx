@@ -18,7 +18,7 @@ export default function AboutPage() {
       <section className="relative min-h-[65vh] flex items-end pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://res.cloudinary.com/dwsl2ktt2/image/upload/v1777773928/backkk_mbfzyh.jpg"
+            src={IMAGES.aboutBg}
             alt="Christiana Akua Feyie"
             fill
             priority
@@ -84,6 +84,7 @@ export default function AboutPage() {
                     src={IMAGES.photo6}
                     alt="Akua Feyie at work"
                     fill
+                    loading="lazy"
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 55vw"
                   />
@@ -104,6 +105,7 @@ export default function AboutPage() {
                     src={IMAGES.portrait3}
                     alt="Christiana Akua Feyie"
                     fill
+                    loading="lazy"
                     className="object-cover object-top"
                     sizes="(max-width: 1024px) 100vw, 40vw"
                   />

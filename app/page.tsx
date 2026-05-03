@@ -206,6 +206,7 @@ export default function Home() {
                     src={IMAGES.portrait2}
                     alt="Christiana Akua Feyie"
                     fill
+                    loading="lazy"
                     className="object-cover object-top"
                     sizes="(max-width: 768px) 90vw, 400px"
                   />
@@ -293,6 +294,7 @@ export default function Home() {
                 src={photo.src}
                 alt={photo.alt}
                 fill
+                loading="lazy"
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 sizes="192px"
               />
@@ -401,6 +403,7 @@ export default function Home() {
                 src={IMAGES.portrait3}
                 alt="Christiana Akua Feyie"
                 fill
+                loading="lazy"
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
@@ -438,6 +441,7 @@ export default function Home() {
             src={IMAGES.photo5}
             alt="Akua Feyie"
             fill
+            loading="lazy"
             className="object-cover object-center"
             sizes="100vw"
           />
