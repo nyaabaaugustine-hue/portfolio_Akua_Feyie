@@ -8,14 +8,15 @@ export default function RealEstatePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-end pb-16 overflow-hidden pt-20">
+      <section className="relative min-h-[60vh] flex items-end pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://res.cloudinary.com/dwsl2ktt2/image/upload/v1777196963/1_j6fe4u.jpg"
             alt="The Phoenix Enclave"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-top"
+            style={{ objectPosition: 'top center' }}
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/20" />

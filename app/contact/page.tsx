@@ -31,14 +31,15 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-end pb-16 overflow-hidden pt-20">
+      <section className="relative min-h-[50vh] flex items-end pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src={IMAGES.photo6}
             alt="Contact Akua Feyie"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-top"
+            style={{ objectPosition: 'top center' }}
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/30" />

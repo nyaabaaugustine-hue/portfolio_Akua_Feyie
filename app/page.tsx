@@ -44,6 +44,7 @@ export default function Home() {
             fill
             priority
             className="object-cover object-top"
+            style={{ objectPosition: 'top center' }}
             sizes="100vw"
           />
           {/* Dark gradient overlay — left heavy so text reads */}
@@ -69,7 +70,7 @@ export default function Home() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 80, repeat: Infinity, ease: 'linear' }}
-          className="absolute right-16 top-24 w-48 h-48 opacity-20 z-[1]"
+          className="absolute right-4 sm:right-16 top-24 w-24 sm:w-48 h-24 sm:h-48 opacity-20 z-[1]"
         >
           {[0, 45, 90, 135].map(deg => (
             <div
@@ -97,13 +98,13 @@ export default function Home() {
             {/* Name */}
             <motion.h1
               custom={1} variants={fadeUp} initial="hidden" animate="show"
-              className="font-display font-light text-6xl md:text-8xl lg:text-9xl leading-[0.88] text-cream mb-6"
+              className="font-display font-light text-5xl sm:text-6xl md:text-8xl lg:text-9xl leading-[0.88] text-cream mb-6"
             >
               Christiana
               <br />
               <span className="italic font-medium shimmer-text">Akua Feyie</span>
               <br />
-              <span className="font-light text-4xl md:text-5xl lg:text-6xl text-cream/60">Yeboaa Okyere</span>
+              <span className="font-light text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-cream/60">Yeboaa Okyere</span>
             </motion.h1>
 
             {/* Animated roles */}
@@ -138,7 +139,7 @@ export default function Home() {
             {/* CTA */}
             <motion.div
               custom={4} variants={fadeUp} initial="hidden" animate="show"
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4"
             >
               <Link
                 href="/contact"
@@ -218,7 +219,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.3, duration: 0.7 }}
                   viewport={{ once: true }}
-                  className="absolute -right-6 top-10 bg-gold-600 p-5 text-cream z-10"
+                  className="absolute -right-3 sm:-right-6 top-10 bg-gold-600 p-4 sm:p-5 text-cream z-10"
                 >
                   <p className="font-display text-4xl font-bold leading-none">20+</p>
                   <p className="font-body text-[10px] tracking-widest uppercase mt-2 leading-tight">Years<br />Experience</p>
@@ -230,7 +231,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.5, duration: 0.7 }}
                   viewport={{ once: true }}
-                  className="absolute -left-6 -bottom-6 bg-cream p-5 z-10"
+                  className="absolute -left-3 sm:-left-6 -bottom-3 sm:-bottom-6 bg-cream p-4 sm:p-5 z-10"
                 >
                   <p className="font-display text-4xl font-bold text-dark leading-none">6+</p>
                   <p className="font-body text-[10px] tracking-widest uppercase mt-2 text-dark/60 leading-tight">Ventures<br />Founded</p>
@@ -340,7 +341,7 @@ export default function Home() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
             {[
               { label: 'Advertising & Marketing', logo: IMAGES.logoSmic360, sub: 'SMIC360 Limited' },
               { label: 'Shipping & Freight', logo: IMAGES.logoMoonlight, sub: 'Moonlight Shipping' },
@@ -353,7 +354,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1, duration: 0.7 }}
                 viewport={{ once: true }}
-                className="group relative bg-cream border border-earth-100 p-8 text-center hover:border-gold-400 hover:shadow-[0_8px_32px_-8px_rgba(201,138,16,0.15)] transition-all duration-500 overflow-hidden"
+                className="group relative bg-cream border border-earth-100 p-5 sm:p-8 text-center hover:border-gold-400 hover:shadow-[0_8px_32px_-8px_rgba(201,138,16,0.15)] transition-all duration-500 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-gold-50/0 to-gold-50/0 group-hover:from-gold-50/60 group-hover:to-transparent transition-all duration-500" />
                 <div className="relative">

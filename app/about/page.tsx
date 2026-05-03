@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero — full bleed image */}
-      <section className="relative min-h-[65vh] flex items-end pb-16 overflow-hidden pt-20">
+      <section className="relative min-h-[65vh] flex items-end pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://res.cloudinary.com/dwsl2ktt2/image/upload/v1777773928/backkk_mbfzyh.jpg"
@@ -23,6 +23,7 @@ export default function AboutPage() {
             fill
             priority
             className="object-cover object-top"
+            style={{ objectPosition: 'top center' }}
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-dark/20" />
